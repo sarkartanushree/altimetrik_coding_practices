@@ -9,11 +9,16 @@ public class LeadersInArray {
 		
 		List<Integer> leaders = new ArrayList<Integer>();
 		
-		if (n == 0)
+		if (n == 0) {
 			System.out.println("Empty array");
+			return;
+		}
+		     
 
-		if (n == 1)
-			System.out.println(ar[n]);
+		if (n == 1) {
+			System.out.println(ar[0]);
+			return;
+		}
 
 		int max = ar[n - 1];
 		 leaders.add(max);
